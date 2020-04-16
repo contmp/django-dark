@@ -1,0 +1,24 @@
+body{color:#ffffff;}
+body,.module,#changelist{background-color:#242424;}
+#header{background-color:#254656;}
+div.breadcrumbs{background-color:#5b8194;}
+table{border-color:#3d3d3d;}
+td,th{border-bottom:1px solid #3d3d3d;}
+#toolbar form #searchbar{border-color:#3d3d3d;background-color:#242424;}
+#changelist #toolbar form input{color:#ffffff;}
+#changelist #toolbar{background-color:#333333;border-top:1px solid #3d3d3d;border-bottom:1px solid #3d3d3d;}
+#changelist-filter{background:#333333;}
+#recent-actions-module{background:#333333;}
+#changelist .toplinks{border-bottom-color:#3d3d3d;}
+a:link,a:visited{color:#45758a;}
+.module h2,.module caption,.inline-group h2{background-color:#5b8194;}
+.quiet,a.quiet:link,a.quiet:visited{color:#d8d8d8;}
+#changelist #toolbar form input[type="submit"],#changelist .actions .button{color:#ffffff;background-color:#242424;}
+#changelist .actions select{color:#ffffff;}
+#changelist .actions{background:none;color:#ffffff;}
+thead th{background:#333333;color:#ffffff;}
+.row1{background:#292929;}
+.row2{background:#242424;}
+fieldset.collapsed h2{background:#333333;}
+input[type=text],input[type=password],input[type=email],input[type=url],input[type=number],input[type=tel],textarea,select,.vTextField{background:#242424;color:#ffffff;}
+label,.required label,label.required{color:#ffffff;}
