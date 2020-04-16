@@ -1,22 +1,36 @@
 # django-dark
 
 
-This is just a fresh playground
+## Preamble
 
-## Planed Setup flow
+This is just a fresh playground, stay tuned or feel free to contribute.
+
+## Setup
+
 ```sh
 pip install django-dark
+
 ```
 
 ## Integration
 
-a) Modify Django's base_site.html
+1) Add "dark" to your INSTALLED_APPS setting like this::
+
+```python
+INSTALLED_APPS = [
+    ...
+    'dark',
+]
+```
+
+2. a) Modify Django's base_site.html
 
 ```html
 <link href="/static/admin/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)" rel="stylesheet">
 ```
 
-b) Include base_site.html override Template here?
+2. b) Include base_site.html override Template here?
+
 
 ## Current Result
 
@@ -27,7 +41,11 @@ b) Include base_site.html override Template here?
 ## Developer Notes
 
 ```sh
-lesscpy -x less/admin/dark.less static/admin/css/dark.css
-watchmedo shell-command --wait --ignore-pattern="public/" --patterns="*.less" -R -c "lesscpy -x less/admin/dark.less static/admin/css/dark.css"
-watchmedo shell-command --wait --ignore-pattern="public/" --patterns="*.less" -R -c "lesscpy -x less/admin/dark.less static/admin/css/dark.css && python manage.py collectstatic --noinput"
+vv
+sv
+pip install -r requirements/common.txt
+lesscpy -x dark/less/dark.less dark/static/admin/css/dark.css
+watchmedo shell-command --wait --patterns="*.less" --recursive --command "lesscpy -x dark/less/dark.less dark/static/admin/css/dark.css"
+watchmedo shell-command --wait --patterns="*.less" --recursive --command "lesscpy -x dark/less/dark.less dark/static/admin/css/dark.css && python manage.py collectstatic --noinput"
+python setup.py sdist
 ```
