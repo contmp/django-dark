@@ -48,4 +48,5 @@ lesscpy -x dark/less/dark.less dark/static/admin/css/dark.css
 watchmedo shell-command --wait --patterns="*.less" --recursive --command "lesscpy -x dark/less/dark.less dark/static/admin/css/dark.css"
 watchmedo shell-command --wait --patterns="*.less" --recursive --command "lesscpy -x dark/less/dark.less dark/static/admin/css/dark.css && python manage.py collectstatic --noinput"
 python setup.py sdist
+twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
 ```
