@@ -1,24 +1,37 @@
-body{color:#ffffff;}
-body,.module,#changelist{background-color:#242424;}
+body{color:#e1e1e0;background-color:#242424;}
+a:focus,a:hover{color:#ffffff !important;}
+a:link,a:visited{color:#6392a7;}
+table{border-color:#3d3d3d;}
+table thead th{background:#333333;color:#e1e1e0;}
+table thead th.sorted{background-color:#464646;}
+table td,table th{border-bottom:1px solid #3d3d3d;}
+.module,#changelist{background-color:#242424;}
 #header{background-color:#254656;}
 div.breadcrumbs{background-color:#5b8194;}
-table{border-color:#3d3d3d;}
-td,th{border-bottom:1px solid #3d3d3d;}
-#toolbar form #searchbar{border-color:#3d3d3d;background-color:#242424;}
-#changelist #toolbar form input{color:#ffffff;}
+#content-related{background-color:#333333;}
+#content-related .module h2{color:#666666;}
+#changelist .paginator{background-color:transparent;}
 #changelist #toolbar{background-color:#333333;border-top:1px solid #3d3d3d;border-bottom:1px solid #3d3d3d;}
+#changelist #toolbar form input{color:#ffffff;}
+#changelist .toplinks{border-bottom-color:#3d3d3d;}
+#toolbar form #searchbar{border-color:#3d3d3d;background-color:#242424;}
 #changelist-filter{background:#333333;}
 #recent-actions-module{background:#333333;}
-#changelist .toplinks{border-bottom-color:#3d3d3d;}
 a:link,a:visited{color:#45758a;}
 .module h2,.module caption,.inline-group h2{background-color:#5b8194;}
 .quiet,a.quiet:link,a.quiet:visited{color:#d8d8d8;}
-#changelist #toolbar form input[type="submit"],#changelist .actions .button{color:#ffffff;background-color:#242424;}
-#changelist .actions select{color:#ffffff;}
+#changelist #toolbar form input[type="submit"],#changelist .actions .button{color:#ffffff;background-color:#6b6b68;}
+#changelist .actions select{color:#ffffff;background-color:#6b6b68;}
 #changelist .actions{background:none;color:#ffffff;}
-thead th{background:#333333;color:#ffffff;}
 .row1{background:#292929;}
 .row2{background:#242424;}
 fieldset.collapsed h2{background:#333333;}
-input[type=text],input[type=password],input[type=email],input[type=url],input[type=number],input[type=tel],textarea,select,.vTextField{background:#242424;color:#ffffff;}
-label,.required label,label.required{color:#ffffff;}
+input[type=text],input[type=password],input[type=email],input[type=url],input[type=number],input[type=tel],textarea,select,.vTextField{background:#6b6b68;color:#ffffff;}
+label,.required label,label.required{color:#e1e1e0;}
+.submit-row{background-color:transparent;}
+.img-invertiable{filter:invert(0.7);}
+fieldset a{color:#cff0ff !important;}
+.inline-related h3{background:transparent;}
+.inline-related fieldset{background-color:#333333;}
+.inline-group div.add-row,.inline-group .tabular tr.add-row td{background-color:#464646;}
+table thead th .text a:focus,table thead th .text a:hover{background-color:#464646;}
