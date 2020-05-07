@@ -14,22 +14,30 @@ pip install django-dark
 
 ## Integration
 
-1) Add "dark" to your INSTALLED_APPS setting like this::
+1) Add "dark" to your INSTALLED_APPS setting like this:
 
-```python
-INSTALLED_APPS = [
-    ...
-    'dark',
-]
-```
+    ```python
+    INSTALLED_APPS = [
+        ...
+        'dark',
+    ]
+    ```
 
-2. a) Modify Django's base_site.html
+2) Modify Django's base_site.html
 
-```html
-<link href="/static/admin/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)" rel="stylesheet">
-```
+    ```html
+    <link href="/static/admin/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)" rel="stylesheet">
+    ```
 
-2. b) Include base_site.html override Template here?
+3) Helper Classes
+
+    If you are using tintable images (one colored icons), you can add the class "img-invertiable", which simply represents:
+
+    ```css
+    .img-invertiable {
+        filter: invert(0.7)
+    }
+    ```
 
 
 ## Current Result
