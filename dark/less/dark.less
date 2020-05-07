@@ -1,8 +1,44 @@
+@borderColor: #3D3D3D;
+@panelBgColor: #333333;
+@panelHeaderColor: #666;
+@anchorVisitedColor: #6392a7;
+@inputBgColor: #6B6B68;
+@textColor: #E1E1E0;
+
 body {
-    color: #fff;
+    color: @textColor;
+    background-color: #242424;
 }
 
-body, .module, #changelist {
+a {
+    &:focus, &:hover {
+        color: #fff !important;
+    }
+    &:link, &:visited {
+        color: @anchorVisitedColor;
+    }
+}
+
+table {
+    border-color: @borderColor;
+
+    thead th {
+        background: #333333;
+        color: @textColor;
+
+        &.sorted {
+            background-color: #464646;
+        }
+    }
+
+    td, th {
+        border-bottom: 1px solid @borderColor;
+    }
+
+}
+
+
+.module, #changelist {
     background-color: #242424;
 }
 
@@ -14,29 +50,42 @@ div.breadcrumbs {
     background-color: #5b8194;
 }
 
-table {
-    border-color: #3D3D3D;
+#content-related {
+    background-color: @panelBgColor;
+
+    .module {
+        h2 {
+            color: @panelHeaderColor;
+        }
+    }
 }
 
-td, th {
-    border-bottom: 1px solid #3D3D3D;
+#changelist {
+
+    .paginator {
+        background-color: transparent;
+    }
+
+    #toolbar {
+        background-color: #333333;
+        border-top: 1px solid @borderColor;
+        border-bottom: 1px solid @borderColor;
+        form input {
+            color: #fff;
+        }
+    }
+
+    .toplinks {
+        border-bottom-color: @borderColor;
+    }
+
 }
 
 #toolbar form #searchbar {
-    border-color: #3D3D3D;
+    border-color: @borderColor;
     background-color: #242424;
 }
 
-#changelist #toolbar form input {
-    color: #fff;
-}
-
-
-#changelist #toolbar {
-    background-color: #333333;
-    border-top: 1px solid #3D3D3D;
-    border-bottom: 1px solid #3D3D3D;
-}
 
 #changelist-filter {
     background: #333333;
@@ -46,9 +95,6 @@ td, th {
     background: #333333;
 }
 
-#changelist .toplinks {
-    border-bottom-color: #3D3D3D;
-}
 
 a:link, a:visited {
     color: #45758A;
@@ -65,20 +111,16 @@ a:link, a:visited {
 #changelist #toolbar form input[type="submit"],
 #changelist .actions .button {
     color: #fff;
-    background-color: #242424;
+    background-color: @inputBgColor;
 }
 
 #changelist .actions select {
     color: #fff;
+    background-color: @inputBgColor;
 }
 
 #changelist .actions {
     background: none;
-    color: #fff;
-}
-
-thead th {
-    background: #333333;
     color: #fff;
 }
 
@@ -95,11 +137,44 @@ fieldset.collapsed h2 {
 }
 
 input[type=text], input[type=password], input[type=email], input[type=url], input[type=number], input[type=tel], textarea, select, .vTextField {
-    background: #242424;
+    background: @inputBgColor;
     color: #fff;
 
 }
 
 label, .required label, label.required {
-    color: #fff;
+    color: @textColor;
+}
+
+
+.submit-row {
+    background-color: transparent;
+}
+
+.img-invertiable {
+    filter: invert(0.7)
+}
+
+fieldset a {
+    color: #cff0ff !important;
+}
+
+
+.inline-related h3 {
+    background: transparent;
+}
+
+
+.inline-related fieldset {
+    background-color: @panelBgColor;
+}
+
+
+.inline-group div.add-row, .inline-group .tabular tr.add-row td {
+    background-color: #464646;
+}
+
+
+table thead th .text a:focus, table thead th .text a:hover {
+    background-color: #464646;
 }
