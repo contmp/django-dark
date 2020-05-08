@@ -1,20 +1,20 @@
 body{color:#e1e1e0;background-color:#242424;}
 a:focus,a:hover{color:#ffffff !important;}
 a:link,a:visited{color:#6392a7;}
-table{border-color:#3d3d3d;}
+table{border-color:#4c4d4b;}
 table thead th{background:#333333;color:#e1e1e0;}
 table thead th.sorted{background-color:#464646;}
-table td,table th{border-bottom:1px solid #3d3d3d;}
+table td,table th{border-bottom:1px solid #4c4d4b;}
 .module,#changelist{background-color:#242424;}
 #header{background-color:#254656;}
 div.breadcrumbs{background-color:#5b8194;}
 #content-related{background-color:#333333;}
 #content-related .module h2{color:#666666;}
 #changelist .paginator{background-color:transparent;}
-#changelist #toolbar{background-color:#333333;border-top:1px solid #3d3d3d;border-bottom:1px solid #3d3d3d;}
+#changelist #toolbar{background-color:#333333;border-top:1px solid #4c4d4b;border-bottom:1px solid #4c4d4b;}
 #changelist #toolbar form input{color:#ffffff;}
-#changelist .toplinks{border-bottom-color:#3d3d3d;}
-#toolbar form #searchbar{border-color:#3d3d3d;background-color:#242424;}
+#changelist .toplinks{border-bottom-color:#4c4d4b;}
+#toolbar form #searchbar{border-color:#4c4d4b;background-color:#242424;}
 #changelist-filter{background:#333333;}
 #recent-actions-module{background:#333333;}
 a:link,a:visited{color:#45758a;}
@@ -35,3 +35,5 @@ fieldset a{color:#cff0ff !important;}
 .inline-related fieldset{background-color:#333333;}
 .inline-group div.add-row,.inline-group .tabular tr.add-row td{background-color:#464646;}
 table thead th .text a:focus,table thead th .text a:hover{background-color:#464646;}
+.form-row{border-bottom:1px solid #4c4d4b;}
+fieldset.collapsed{border:none;}
