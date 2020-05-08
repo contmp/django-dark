@@ -37,3 +37,4 @@ fieldset a{color:#cff0ff !important;}
 table thead th .text a:focus,table thead th .text a:hover{background-color:#464646;}
 .form-row{border-bottom:1px solid #4c4d4b;}
 fieldset.collapsed{border:none;}
+.submit-row{padding:12px 0;border:none;}
