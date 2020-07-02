@@ -49,12 +49,18 @@ pip install django-dark
 ## Developer Notes
 
 ```sh
+# alias sv="source .virtualenv/bin/activate"
+# alias vv="mkdir .virtualenv && python3 -m venv .virtualenv && sv"
 vv
 sv
 pip install -r requirements/common.txt
+
+# Compile Examples
 lesscpy -x dark/less/dark.less dark/static/admin/css/dark.css
 watchmedo shell-command --wait --patterns="*.less" --recursive --command "lesscpy -V -x dark/less/dark.less dark/static/admin/css/dark.css"
 watchmedo shell-command --wait --patterns="*.less" --recursive --command "lesscpy -V -x dark/less/dark.less dark/static/admin/css/dark.css && python manage.py collectstatic --noinput"
+
+# Distribution
 python setup.py sdist
 twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
 ```
