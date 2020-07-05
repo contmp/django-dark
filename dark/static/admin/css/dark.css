@@ -29,7 +29,7 @@ fieldset.collapsed h2{background:#333333;}
 input[type=text],input[type=password],input[type=email],input[type=url],input[type=number],input[type=tel],textarea,select,.vTextField{background:#6b6b68;color:#ffffff;}
 label,.required label,label.required{color:#e1e1e0;}
 .submit-row{background-color:transparent;}
-.img-invertiable{filter:invert(0.7);}
+.img-invertable{filter:invert(0.7);}
 fieldset a{color:#cff0ff !important;}
 .inline-related h3{background:transparent;}
 .inline-related fieldset{background-color:#333333;}
