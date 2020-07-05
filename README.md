@@ -32,7 +32,9 @@ pip install django-dark
         <link href="/static/admin/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)" rel="stylesheet">
     {% endblock %}
     ```
-    Template can be found here: site-packages/django/contrib/admin/templates/admin/base_site.html
+    Template can be found here:
+      - lib/python3.X/site-packages/django/contrib/admin/templates/admin/base_site.html
+      - https://github.com/django/django/blob/master/django/contrib/admin/templates/admin/base_site.html
     
 
 3) Helper Classes
