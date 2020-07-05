@@ -26,8 +26,13 @@ pip install django-dark
 2) Modify Django's base_site.html
 
     ```html
-    <link href="/static/admin/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)" rel="stylesheet">
+    {% block extrahead %}
+        <link rel="shortcut icon" href="{% static 'favicon.png' %}" />
+        <link href="/static/admin/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)" rel="stylesheet">
+    {% endblock %}
     ```
+    Temaplte can be found here: site-packages/django/contrib/admin/templates/admin/base_site.html
+    
 
 3) Helper Classes
 
