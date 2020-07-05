@@ -27,7 +27,8 @@ pip install django-dark
 
     ```html
     {% block extrahead %}
-        <link rel="shortcut icon" href="{% static 'favicon.png' %}" />
+        .
+        .
         <link href="/static/admin/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)" rel="stylesheet">
     {% endblock %}
     ```
@@ -36,10 +37,10 @@ pip install django-dark
 
 3) Helper Classes
 
-    If you are using tintable images (one colored icons), you can add the class "img-invertiable", which simply represents:
+    If you are using tintable images (one colored icons), you can add the class "img-invertable", which simply represents:
 
     ```css
-    .img-invertiable {
+    .img-invertable {
         filter: invert(0.7)
     }
     ```
