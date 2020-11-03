@@ -41,3 +41,6 @@ table thead th .text a:focus,table thead th .text a:hover{background-color:#4646
 .form-row{border-bottom:1px solid #4c4d4b;}
 fieldset.collapsed{border:none;}
 .submit-row{padding:12px 0;border:none;}
+#nav-sidebar{border-right:1px solid #454d55;background-color:inherit;}
+.toggle-nav-sidebar{background-color:#313131;outline:none;border:none;}
+.toggle-nav-sidebar:hover,.toggle-nav-sidebar:focus{background-color:#424242;outline:none;border:none;}
