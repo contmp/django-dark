@@ -19,6 +19,10 @@ a {
     }
 }
 
+thead th a:link, thead th a:visited {
+    color: #bfbfbf;
+}
+
 table {
     border-color: @borderColor;
 
@@ -37,6 +41,13 @@ table {
 
 }
 
+tr:nth-child(odd), .row-form-errors {
+    background-color: rgba(255,255,255,.05);
+}
+
+tr:nth-child(even), tr:nth-child(even) .errorlist, tr:nth-child(odd) + .row-form-errors, tr:nth-child(odd) + .row-form-errors .errorlist {
+    background-color: #343a40;
+}
 
 .module, #changelist {
     background-color: #242424;
@@ -47,7 +58,7 @@ table {
 }
 
 div.breadcrumbs {
-    background-color: #5b8194;
+    background-color: #4d6673;
 }
 
 #content-related {
@@ -95,13 +106,12 @@ div.breadcrumbs {
     background: #333333;
 }
 
-
 a:link, a:visited {
     color: #45758A;
 }
 
 .module h2, .module caption, .inline-group h2 {
-    background-color: #5b8194;
+    background-color: #33424a;
 }
 
 .quiet, a.quiet:link, a.quiet:visited {

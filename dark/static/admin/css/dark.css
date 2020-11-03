@@ -1,13 +1,16 @@
 body{color:#e1e1e0;background-color:#242424;}
 a:focus,a:hover{color:#ffffff !important;}
 a:link,a:visited{color:#6392a7;}
+thead th a:link,thead th a:visited{color:#bfbfbf;}
 table{border-color:#4c4d4b;}
 table thead th{background:#333333;color:#e1e1e0;}
 table thead th.sorted{background-color:#464646;}
 table td,table th{border-bottom:1px solid #4c4d4b;}
+tr:nth-child(odd),.row-form-errors{background-color:rgba(255,255,255,.05);}
+tr:nth-child(even), tr:nth-child(even) .errorlist, tr:nth-child(odd) + .row-form-errors, tr:nth-child(odd)+.row-form-errors .errorlist{background-color:#343a40;}
 .module,#changelist{background-color:#242424;}
 #header{background-color:#254656;}
-div.breadcrumbs{background-color:#5b8194;}
+div.breadcrumbs{background-color:#4d6673;}
 #content-related{background-color:#333333;}
 #content-related .module h2{color:#666666;}
 #changelist .paginator{background-color:transparent;}
@@ -18,7 +21,7 @@ div.breadcrumbs{background-color:#5b8194;}
 #changelist-filter{background:#333333;}
 #recent-actions-module{background:#333333;}
 a:link,a:visited{color:#45758a;}
-.module h2,.module caption,.inline-group h2{background-color:#5b8194;}
+.module h2,.module caption,.inline-group h2{background-color:#33424a;}
 .quiet,a.quiet:link,a.quiet:visited{color:#d8d8d8;}
 #changelist #toolbar form input[type="submit"],#changelist .actions .button{color:#ffffff;background-color:#6b6b68;}
 #changelist .actions select{color:#ffffff;background-color:#6b6b68;}
